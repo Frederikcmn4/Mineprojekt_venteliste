@@ -1,4 +1,4 @@
-tal = 5 
+tal = 50 
 if (tal < 10):
     print("tallet er mindre end 10")
 else:
