@@ -53,7 +53,7 @@ if __name__ == "__main__":
     vl = Venteliste()
 
     # Tilføj nogle patienter
-    vl.add_patient(Patient("Anna Jensen", 45, 2, "Rutinekontrol"))
+    vl.add_patient(Patient("Anne Jensen", 45, 2, "Rutinekontrol"))
     vl.add_patient(Patient("Frederik Nielsen", 22, 1, "Akut lungecancer"))
     vl.add_patient(Patient("Clara Olsen", 30, 3, "Forebyggende undersøgelse"))
     vl.add_patient(Patient("Carl Knudsen", 22, 1, "Akut Testikelcancer"))
