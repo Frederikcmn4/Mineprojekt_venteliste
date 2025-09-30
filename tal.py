@@ -50,21 +50,21 @@ class WaitingList:
 
 # Eksempel på brug
 if __name__ == "__main__":
-    wl = WaitingList()
+    vl = WaitingList()
 
     # Tilføj nogle patienter
-    wl.add_patient(Patient("Anna Jensen", 45, 2, "Rutinekontrol"))
-    wl.add_patient(Patient("Frederik Nielsen", 22, 1, "Akut lungecancer"))
-    wl.add_patient(Patient("Clara Olsen", 30, 3, "Forebyggende undersøgelse"))
+    vl.add_patient(Patient("Anna Jensen", 45, 2, "Rutinekontrol"))
+    vl.add_patient(Patient("Frederik Nielsen", 22, 1, "Akut lungecancer"))
+    vl.add_patient(Patient("Clara Olsen", 30, 3, "Forebyggende undersøgelse"))
 
     # Vis listen
-    wl.show_list()
+    vl.show_list()
 
     # Søg efter en patient
-    wl.search_patient("Bob Hansen")
+    vl.search_patient("Bob Hansen")
 
     # Fjern næste patient (højeste prioritet først)
-    wl.remove_next_patient()
+    vl.remove_next_patient()
 
     # Vis opdateret liste
-    wl.show_list()
+    vl.show_list()
