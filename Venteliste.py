@@ -53,7 +53,7 @@ if __name__ == "__main__":
     vl = Venteliste()
 
     # Tilføj nogle patienter
-    vl.add_patient(Patient("Anna Jensen", 45, 2, "Rutinekontrol"))
+    vl.add_patient(Patient("Anne Jensen", 45, 2, "Rutinekontrol"))
     vl.add_patient(Patient("Frederik Nielsen", 22, 1, "Akut lungecancer"))
     vl.add_patient(Patient("Clara Olsen", 30, 3, "Forebyggende undersøgelse"))
 
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     vl.show_list()
 
     # Søg efter en patient
-    vl.search_patient("Frederik Nielsen")
+    vl.search_patient("Bob Hansen")
 
     # Fjern næste patient (højeste prioritet først)
     vl.remove_next_patient()
