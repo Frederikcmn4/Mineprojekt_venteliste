@@ -61,7 +61,7 @@ if __name__ == "__main__":
     vl.show_list()
 
     # Søg efter en patient
-    vl.search_patient("Bob Hansen")
+    vl.search_patient("Frederik Nielsen")
 
     # Fjern næste patient (højeste prioritet først)
     vl.remove_next_patient()
