@@ -50,7 +50,7 @@ class Venteliste:
 
 # Eksempel på brug
 if __name__ == "__main__":
-    vl = WaitingList()
+    vl = Venteliste()
 
     # Tilføj nogle patienter
     vl.add_patient(Patient("Anna Jensen", 45, 2, "Rutinekontrol"))
