@@ -16,7 +16,7 @@ class Patient:
     def __str__(self):
         return f"ID: {self.id} | Navn: {self.name} | Alder: {self.age} | Urgency: {self.urgency} | Årsag: {self.reason} | Tilføjet: {self.added_time.strftime('%Y-%m-%d %H:%M')}"
 
-class WaitingList:
+class Venteliste:
     def __init__(self):
         self.queue = []  # Priority queue (heap)
 
@@ -67,4 +67,5 @@ if __name__ == "__main__":
     vl.remove_next_patient()
 
     # Vis opdateret liste
+
     vl.show_list()
