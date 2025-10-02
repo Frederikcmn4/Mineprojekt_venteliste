@@ -57,6 +57,7 @@ if __name__ == "__main__":
     vl.add_patient(Patient("Frederik Nielsen", 22, 1, "Akut lungecancer"))
     vl.add_patient(Patient("Clara Olsen", 30, 3, "Forebyggende undersøgelse"))
     vl.add_patient(Patient("Carl Knudsen", 22, 1, "Akut Testikelcancer"))
+    vl.add_patient(Patient("Julie Dufresne", 18, 3, "Mentalvurdering"))
 
     # Vis listen
     vl.show_list()
