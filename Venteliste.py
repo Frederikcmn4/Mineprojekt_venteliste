@@ -69,3 +69,50 @@ if __name__ == "__main__":
     # Vis opdateret liste
 
     vl.show_list()
+
+# Kode til kørsel af script i terminal
+
+    def menu():
+        print("\n--- VENTELISTE SYSTEM ---")
+        print("1. Tilføj patient")
+        print("2. Vis venteliste")
+        print("3. Søg patient")
+        print("4. Fjern næste patient (højeste prioritet)")
+        print("5. Afslut")
+        return input("Vælg en mulighed (1-5): ")
+
+    while True:
+        valg = menu()
+
+        if valg == "1":
+            print("\n--- Tilføj patient ---")
+            name = input("Navn: ")
+            age = input("Alder: ")
+            urgency = input("Prioritet (1=høj, 3=lav): ")
+            reason = input("Årsag: ")
+
+            try:
+                patient = Patient(name, int(age), int(urgency), reason)
+                vl.add_patient(patient)
+            except ValueError:
+                print("Fejl: Alder og prioritet skal være tal.")
+
+        elif valg == "2":
+            print("\n--- Aktuel venteliste ---")
+            vl.show_list()
+
+        elif valg == "3":
+            print("\n--- Søg patient ---")
+            name = input("Indtast patientnavn: ")
+            vl.search_patient(name)
+
+        elif valg == "4":
+            print("\n--- Fjern næste patient ---")
+            vl.remove_next_patient()
+
+        elif valg == "5":
+            print("Afslutter programmet...")
+            break
+
+        else:
+            print("Ugyldigt valg, prøv igen.")
