@@ -1,3 +1,7 @@
+# Der skal skabes en venteliste til patienthåndtering tilhørende sundhedsvæsenet. 
+# Der initialiseres klasserne Patient og Venteliste, hvor man skal angive attributter som name, age, urgency og reason. 
+# Derudover kan ventelisten tilgås inde på terminalen med øget funktionalitet for en bedre brugeroplevelse.
+
 import heapq  # Til priority queue
 import datetime  # Til tidsstempler
 
@@ -15,6 +19,7 @@ class Patient:
 
     def __str__(self):
         return f"ID: {self.id} | Navn: {self.name} | Alder: {self.age} | Urgency: {self.urgency} | Årsag: {self.reason} | Tilføjet: {self.added_time.strftime('%Y-%m-%d %H:%M')}"
+
 
 class Venteliste:
     def __init__(self):
