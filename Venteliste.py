@@ -1,6 +1,8 @@
 import heapq
 import datetime
 
+# Se problemformuleringen inde på README.md filen i projektmappen
+
 class Patient:
     def __init__(self, name, age, urgency, reason, læge=None):
         self.name = name
