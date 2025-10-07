@@ -23,15 +23,15 @@ class Patient:
         )
 
 class Læge:
-    def __init__(self, name, age, type):
+    def __init__(self, name, age, speciale):
         self.name = name
         self.age = age
-        self.type = type
+        self.speciale = speciale
         self.added_time = datetime.datetime.now()
         self.id = id(self)
 
     def __str__(self):
-        return f"Læge ID: {self.id} | Navn: {self.name} | Alder: {self.age} | Type: {self.type}"
+        return f"Læge ID: {self.id} | Navn: {self.name} | Alder: {self.age} | Speciale: {self.speciale}"
 
         
 
@@ -131,9 +131,9 @@ if __name__ == "__main__":
             print("\n--- Tilføj læge ---")
             name = input("Navn: ")
             age = input("Alder: ")
-            type = input("Type: ")
+            speciale = input("Speciale: ")
             try:
-                læge = Læge(name, int(age), type)
+                læge = Læge(name, int(age), speciale)
                 vl.add_læge(læge)
             except ValueError:
                 print("Fejl: Alder skal være et tal.")
