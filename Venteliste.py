@@ -11,6 +11,7 @@ class Patient:
         self.age = age
         self.urgency = urgency  # Lavere tal = højere prioritet (f.eks. 1 = kritisk, 3 = rutine)
         self.reason = reason
+    
         self.added_time = datetime.datetime.now()
         self.id = id(self)  # Simpel unik ID
 
@@ -19,6 +20,16 @@ class Patient:
 
     def __str__(self):
         return f"ID: {self.id} | Navn: {self.name} | Alder: {self.age} | Urgency: {self.urgency} | Årsag: {self.reason} | Tilføjet: {self.added_time.strftime('%Y-%m-%d %H:%M')}"
+
+class læge:
+    def __init__(self, name, age, type):
+        self.name = name
+        self.age = age
+        self.type = type
+        self.added_time = datetime.datetime.now()
+        self.id = id(self)  # Simpel unik ID
+
+
 
 
 class Venteliste:
@@ -58,11 +69,7 @@ if __name__ == "__main__":
     vl = Venteliste()
 
     # Tilføj nogle patienter
-    vl.add_patient(Patient("Anne Jensen", 45, 2, "Rutinekontrol"))
-    vl.add_patient(Patient("Frederik Nielsen", 22, 1, "Akut lungecancer"))
-    vl.add_patient(Patient("Clara Olsen", 30, 3, "Forebyggende undersøgelse"))
-    vl.add_patient(Patient("Carl Knudsen", 22, 1, "Akut Testikelcancer"))
-    vl.add_patient(Patient("Julie Dufresne", 18, 3, "Mentalvurdering"))
+
 
 # Eksempler på funktioner, der kan køres i Positron, men er pt deaktiveret:
 
@@ -87,7 +94,8 @@ if __name__ == "__main__":
         print("3. Søg patient")
         print("4. Fjern næste patient (højeste prioritet)")
         print("5. Afslut")
-        return input("Vælg en mulighed (1-5): ")
+        print("6. Tilføj Læge")        
+        return input("Vælg en mulighed (1-6): ")
 
     while True:
         valg = menu()
@@ -98,6 +106,7 @@ if __name__ == "__main__":
             age = input("Alder: ")
             urgency = input("Prioritet (1=høj, 3=lav): ")
             reason = input("Årsag: ")
+            læge = input("læge: ")
 
             try:
                 patient = Patient(name, int(age), int(urgency), reason)
@@ -122,5 +131,18 @@ if __name__ == "__main__":
             print("Afslutter programmet...")
             break
 
+        elif valg == "6":
+            print("\n--- Tilføj patient ---")
+            name = input("Navn: ")
+            age = input("Alder: ")
+            type = input("type: ")
+            try:
+                patient = Patient(name, int(age), int(type), reason)
+                vl.add_patient(patient)
+            except ValueError:
+                print("Fejl: Alder og prioritet skal være tal.")
+
+
         else:
             print("Ugyldigt valg, prøv igen.")
+
