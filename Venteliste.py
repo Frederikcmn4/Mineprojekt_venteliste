@@ -64,21 +64,22 @@ if __name__ == "__main__":
     vl.add_patient(Patient("Carl Knudsen", 22, 1, "Akut Testikelcancer"))
     vl.add_patient(Patient("Julie Dufresne", 18, 3, "Mentalvurdering"))
 
-    # Vis listen
-    vl.show_list()
+# Eksempler på funktioner, der kan køres i Positron, men er pt deaktiveret:
+
+   #Vis listen
+    # vl.show_list()
 
     # Søg efter en patient
-    vl.search_patient("Frederik Nielsen")
+    # vl.search_patient("Frederik Nielsen")
 
     # Fjern næste patient (højeste prioritet først)
-    vl.remove_next_patient()
+    # vl.remove_next_patient()
 
     # Vis opdateret liste
 
-    vl.show_list()
+    # vl.show_list()
 
 # Kode til kørsel af script i terminal
-
     def menu():
         print("\n--- VENTELISTE SYSTEM ---")
         print("1. Tilføj patient")
