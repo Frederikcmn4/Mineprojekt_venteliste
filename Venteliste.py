@@ -69,13 +69,13 @@ class Venteliste:
             print("Ingen læger tilføjet endnu.")
             return
         print("👨‍⚕️ Aktuelle læger:")
-        for l in self.læger:
-            print(l)
+        for i in self.læger:
+            print(i)
 
     def find_læge(self, name):
-        for l in self.læger:
-            if l.name.lower() == name.lower():
-                return l
+        for i in self.læger:
+            if i.name.lower() == name.lower():
+                return i
         return None
 
     def search_patient(self, name):
