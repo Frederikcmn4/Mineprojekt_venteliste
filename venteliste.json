@@ -1,31 +1,72 @@
 {
   "patients": [
     {
-      "id": 1829750271552,
-      "name": "Frederik Nielsen",
-      "age": 23,
+      "id": 4399677840,
+      "name": "Carl Nielsen",
+      "age": 12,
       "urgency": 1,
-      "reason": "Lungecancer",
-      "læge": "Stig Bertelsen",
-      "added_time": "2025-10-09T10:14:35.782358"
+      "reason": "Hjerterytmefejl",
+      "læge": "Liv Højmark",
+      "added_time": "2025-10-09T10:46:50.489853"
     },
     {
-      "id": 1829753148816,
-      "name": "Carl Knudsen ",
+      "id": 4412828976,
+      "name": "Frederik Nielsen",
+      "age": 87,
+      "urgency": 1,
+      "reason": "Kol",
+      "læge": null,
+      "added_time": "2025-10-09T10:47:49.714033"
+    },
+    {
+      "id": 4403577424,
+      "name": "Jasmin Kalkan",
+      "age": 20,
+      "urgency": 2,
+      "reason": "Ondt i begge fødder",
+      "læge": "Carl Carlson",
+      "added_time": "2025-10-09T10:45:31.403732"
+    },
+    {
+      "id": 4400697696,
+      "name": "Stig Jensen",
+      "age": 26,
+      "urgency": 3,
+      "reason": "ondt i lilletåen",
+      "læge": "Carl Carlson",
+      "added_time": "2025-10-09T10:38:53.678148"
+    },
+    {
+      "id": 4408253216,
+      "name": "Gry Harbo",
       "age": 21,
       "urgency": 2,
-      "reason": "Begyndende lungecancer",
-      "læge": "Stig Bertelsen",
-      "added_time": "2025-10-09T10:15:15.732693"
+      "reason": "Fejl i protese",
+      "læge": null,
+      "added_time": "2025-10-09T10:49:22.896324"
     }
   ],
   "læger": [
     {
-      "id": 1829750265168,
-      "name": "Stig Bertelsen",
-      "age": 30,
-      "speciale": "Cancer",
-      "added_time": "2025-10-09T10:13:44.892603"
+      "id": 4404693936,
+      "name": "Carl Carlson",
+      "age": 25,
+      "speciale": "Fødder",
+      "added_time": "2025-10-09T10:37:57.643365"
+    },
+    {
+      "id": 4413505152,
+      "name": "Liv Højmark",
+      "age": 22,
+      "speciale": "Kirurgisk afdeling",
+      "added_time": "2025-10-09T10:46:19.383134"
+    },
+    {
+      "id": 4414194256,
+      "name": "Jeppe k ",
+      "age": 32,
+      "speciale": "Teknologiske lægemidler",
+      "added_time": "2025-10-09T10:48:16.622013"
     }
   ]
 }
