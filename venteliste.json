@@ -1,0 +1,31 @@
+{
+  "patients": [
+    {
+      "id": 1829750271552,
+      "name": "Frederik Nielsen",
+      "age": 23,
+      "urgency": 1,
+      "reason": "Lungecancer",
+      "læge": "Stig Bertelsen",
+      "added_time": "2025-10-09T10:14:35.782358"
+    },
+    {
+      "id": 1829753148816,
+      "name": "Carl Knudsen ",
+      "age": 21,
+      "urgency": 2,
+      "reason": "Begyndende lungecancer",
+      "læge": "Stig Bertelsen",
+      "added_time": "2025-10-09T10:15:15.732693"
+    }
+  ],
+  "læger": [
+    {
+      "id": 1829750265168,
+      "name": "Stig Bertelsen",
+      "age": 30,
+      "speciale": "Cancer",
+      "added_time": "2025-10-09T10:13:44.892603"
+    }
+  ]
+}
