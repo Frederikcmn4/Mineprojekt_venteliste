@@ -67,6 +67,13 @@
       "age": 32,
       "speciale": "Teknologiske lægemidler",
       "added_time": "2025-10-09T10:48:16.622013"
+    },
+    {
+      "id": 2142624845760,
+      "name": "James Bond",
+      "age": 12,
+      "speciale": "Nakkeskud",
+      "added_time": "2025-10-09T11:24:13.074994"
     }
   ]
 }
