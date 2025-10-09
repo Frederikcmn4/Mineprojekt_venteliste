@@ -187,7 +187,7 @@ if __name__ == "__main__":
         print("6. Vis læger")
         print("7. Slet læge")      
         print("8. Afslut")  
-        return input("Vælg en mulighed (1-7): ")
+        return input("Vælg en mulighed (1-8): ")
 
     while True:
         valg = menu()
