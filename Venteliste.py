@@ -185,7 +185,6 @@ if __name__ == "__main__":
         print("4. Fjern næste patient (højeste prioritet)")
         print("5. Tilføj læge")
         print("6. Vis læger")
-        print("7. Afslut")
         print("7. Slet læge")      
         print("8. Afslut")  
         return input("Vælg en mulighed (1-7): ")
