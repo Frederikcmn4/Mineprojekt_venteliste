@@ -40,7 +40,7 @@ class Patient:
 
     @classmethod
     def from_dict(cls, data, læger):
-        læge = next((l for l in læger if l.name == data["læge"]), None)
+        læge = next((i for i in læger if i.name == data["læge"]), None)
         return cls(
             name=data["name"],
             age=data["age"],
@@ -121,19 +121,6 @@ class Venteliste:
         print("👨‍⚕️ Aktuelle læger:")
         for i in self.læger:
             print(i)
-    
-    def remove_læge(self, name):
-        læger_to_remove = [i for i in self.læger if i.name.lower() == name.lower()]
-        
-        if not læger_to_remove:
-            print(f"❌ Fejl: Lægen '{name}' blev ikke fundet.")
-            return
-
-        læge = læger_to_remove[0]
-        self.læger.remove(læge)
-        
-        print(f"✅ Læge fjernet: {læge.name} (ID: {læge.id}).")
-
 
     def find_læge(self, name):
         for i in self.læger:
@@ -185,8 +172,7 @@ if __name__ == "__main__":
         print("4. Fjern næste patient (højeste prioritet)")
         print("5. Tilføj læge")
         print("6. Vis læger")
-        print("7. Slet læge")      
-        print("8. Afslut")  
+        print("7. Afslut")
         return input("Vælg en mulighed (1-7): ")
 
     while True:
@@ -231,13 +217,8 @@ if __name__ == "__main__":
             vl.show_læger()
 
         elif valg == "7":
-            print("\n--- Slet Læge ---")
-            name = input("Indtast navnet på lægen, der skal slettes: ")
-            vl.remove_læge(name) # Kalder den nye metode
-            
-        elif valg == "8":
             print("Afslutter programmet...")
-            # Her skal din gem-logik være, hvis du ikke har auto-save
+            vl.save_to_file()
             break
 
         else:
