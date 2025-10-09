@@ -133,6 +133,8 @@ class Venteliste:
         self.læger.remove(læge)
         
         print(f"✅ Læge fjernet: {læge.name} (ID: {læge.id}).")
+        self.save_to_file()
+        return patient
 
 
     def find_læge(self, name):
